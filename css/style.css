@@ -1,0 +1,405 @@
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*##################       banner section starts       ##################*/
+.banner_section{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header_part{
+    background-color: #00000041;
+}
+.header_part::before{
+    opacity: .9;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    margin: 0 40px;
+    text-align: center;
+    width: 23%;
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-item:hover{
+    background-color: #e59205;
+    color: #000;
+    transition: .4s all ease-in-out;
+    /* background: rgb(0, 0, 0, 0.3); */
+}
+.nav-link{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* position: fixed; */
+}
+.banner_content h1{
+    margin-top: 100px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 46px;
+}
+.banner_content h1 span{
+    color: #e59205;
+}
+.banner_content p{
+    margin: 24px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 0 100px;
+}
+ .btn_learn{
+    padding: 8px 26px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+ }
+.btn_learn:hover{
+    background: #e59205;
+    transition: .4s all ease-in-out;
+    border: none;
+}
+/*##################       banner section ends       ##################*/
+
+
+
+
+
+/*##################       food section starts       ##################*/
+.food_section{
+
+}
+.food_title {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.food_title span{
+    display: block;
+    width: 140px;
+    height: 1px;
+    background: transparent;
+    position: relative;
+}
+.food_title span::before{
+    content: '';
+    height: 1px;
+    width: 0;
+    right: 0;
+    position: absolute;
+    background: #e59205;
+    transition: .4s all ease-in-out;
+}
+.food_title span.span_2::before{
+    content: '';
+    height: 1px;
+    width: 0;
+    left: 0 !important;
+    position: absolute;
+    background: #e59205;
+    transition: .4s all ease-in-out;
+}
+.food_section:hover  .food_title span::before{
+    width: 100%;
+}
+.food_section:hover  .food_title span.span_2::before{
+    width: 100%;
+}
+.food_2_section:hover  .food_title span::before{
+    width: 100%;
+}
+.food_2_section:hover  .food_title span.span_2::before{
+    width: 100%;
+}
+
+.food_title h1{
+    margin: 0 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 46px;
+    color: #6e7498;
+}
+.food_section p{
+    margin: 44px 0;
+    padding: 0 250px;
+    font-family: 'Raleway', sans-serif; 
+    color: #a4a8bc;
+}
+
+
+
+
+
+.food_section .btn_learn{
+    color: #a4a8bc;
+    margin: auto;
+    padding: 8px 22px !important;
+    border: 1px solid #a4a8bc !important;
+}
+.food_section .btn_learn:hover{
+    color: #fff;
+    transition: .4s all ease-in-out;
+}
+.food_section button{
+    color: #a4a8bc;
+    padding: 6px 22px !important;
+    background: transparent;
+    border: 1px solid #a4a8bc;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.food_section button:hover{
+    color: #fff;
+    background: #e59205;
+    transition: .4s all ease-in-out;
+    border: none;
+}
+.food_section ul li{
+    list-style: none;
+}
+.row_1{
+    display: flex;
+    justify-content: space-between;
+}
+.row_2{
+    display: flex;
+    justify-content: center;
+}
+.food_box{
+    text-align: center;
+    margin: auto;
+}
+
+#more {
+    display: none;
+}
+.food_box h1{
+    font-family: 'Playfair Display', serif;
+    color: #e59205;
+    font-weight: 900;
+    font-style: italic;
+    margin: 20px 0;
+}
+.food_box h4{
+    font-family: 'Raleway', sans-serif; 
+    color: #3a3a3a;
+    font-size: 16px;
+}
+.food_box p{
+    font-family: 'Raleway', sans-serif; 
+    padding: 0 !important;
+    margin: 20px 0 !important;
+    color: #a4a8bc;
+    font-size: 14px;
+}
+.food_box:hover img{
+    transform: scale(1.2);
+    transition: .4s all ease-in-out;
+}
+/*##################       food section ends       ##################*/
+
+
+
+
+
+/*##################       breakfast section starts       ##################*/
+.breakfast_section{
+    
+}
+.breakfast_section h1{
+   
+    margin: 30px;
+    padding-right: 40px; 
+}
+.breakfast_section .col-md-4 {
+    background-color: #e59205;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+
+.breakfast_section .col-md-8{
+    padding: 0;
+    margin: 0;
+}
+/*##################       breakfast section ends       ##################*/
+
+
+
+/*##################       food_2_section section ends       ##################*/
+.food_2_section p{
+    margin: 44px 0;
+    padding: 0 250px;
+    font-family: 'Raleway', sans-serif; 
+    color: #a4a8bc;
+}
+
+.icon_box:hover img{
+    transform: scale(1.2);
+    transition: .4s all ease-in-out;
+}
+.icon_box img{
+    margin-top: 20px;
+    width: 16% !important;
+}
+.icon_box h3{
+    margin: 20px 0;
+    color: #6e7498;
+}
+.icon_box p{
+    padding: 0 27px !important;
+    color: #a4a8bc;
+}
+.icon_box .btn_learn{
+    color: #000;
+    border: 1px solid #a4a8bc;
+    margin-bottom: 20px;
+    color: #6e7498;
+}
+.icon_box .btn_learn:hover{
+    color: #fff;
+    transition: .4s all ease-in-out;
+}
+.icon_box:hover{
+    border: 1px solid #a4a8bc;
+    transition: .4s all ease-in-out;
+}
+/*##################       food_2_section section ends       ##################*/
+
+
+
+
+
+/*##################       newsletter section starts       ##################*/
+.newsletter_section{
+    background-image: url(../images/newsletter_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+}
+.newsletter_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.newsletter_content h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 46px;
+}
+.newsletter_content form{
+
+}
+.newsletter_content form input{
+
+}
+.newsletter_content form input[type="email"]{
+    margin: 40px 0;
+    width: 74%;
+    padding: 7px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.newsletter_content form input[type="email"]:focus{
+    border: none;
+    outline: 1px solid #e59205;
+}
+.newsletter_content form input[type="email"]::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+.newsletter_content form input[type="submit"]{
+    padding: 6px 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    background: #e59205;
+    border: none;
+    color: #fff;
+}
+.newsletter_content form input[type="submit"]:hover{
+    background: #a56a05;
+    transition: .4s all ease-in-out;
+}
+/*##################       newsletter section ends       ##################*/
+
+
+
+/*##################       footer section starts       ##################*/
+footer{
+    
+}
+footer p{
+    color: #a4a8bc;
+    font-family: 'Raleway', sans-serif;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #a4a8bc;
+    font-family: 'Raleway', sans-serif;
+}
+footer ul li a:hover{
+    color: #e59205;
+    transition: .4s all ease-in-out;
+}
+.copy_2{
+    display: none;
+}
+/*##################       footer section ends       ##################*/

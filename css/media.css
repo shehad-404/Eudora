@@ -1,0 +1,113 @@
+/*##############     max-width: 1199px      ##############*/
+@media(max-width:1199px){
+    
+}
+
+
+/*##############     max-width: 991px      ##############*/
+@media(max-width:991px){
+
+}
+
+
+/*##############     max-width: 767px      ##############*/
+@media(max-width:767px){
+    .banner_content h1 {
+        font-size: 30px !important;
+    }
+    .banner_content p {
+        padding: 0 !important;
+    }
+    .food_title h1 {
+        margin: 0 !important;
+        font-size: 30px !important;
+    }
+    .food_section p {
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+    .food_2_section p {
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+    .food_2_section .icon_box{
+        margin-top: 20px !important;
+    }
+
+
+
+    .newsletter_content h1 {
+        font-size: 30px !important;
+    }
+    .newsletter_content form input[type="email"] {
+        margin: 20px 0 !important;
+    }
+
+    footer .row{
+        margin: 0 !important;
+    }
+    footer ul{
+        margin: 5px !important;
+    }
+    footer p{
+        text-align: center;
+    }
+    .copy_1{
+        display: none !important;
+    }
+    .copy_2{
+        display: block !important;
+    }
+}
+
+
+
+/*##############     max-width: 575px      ##############*/
+@media(max-width:575px){
+    /* .banner_content h1 {
+        font-size: 30px !important;
+    }
+    .banner_content p {
+        padding: 0 !important;
+    }
+    .food_title h1 {
+        margin: 0 !important;
+        font-size: 30px !important;
+    }
+    .food_section p {
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+    .food_2_section p {
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+    .food_2_section .icon_box{
+        margin-top: 20px !important;
+    }
+
+
+
+    .newsletter_content h1 {
+        font-size: 30px !important;
+    }
+    .newsletter_content form input[type="email"] {
+        margin: 20px 0 !important;
+    }
+
+    footer .row{
+        margin: 0 !important;
+    }
+    footer ul{
+        margin: 5px !important;
+    }
+    footer p{
+        text-align: center;
+    }
+    .copy_1{
+        display: none !important;
+    }
+    .copy_2{
+        display: block !important;
+    } */
+}
